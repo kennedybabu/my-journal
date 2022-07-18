@@ -10,7 +10,9 @@ function App() {
   return (
     <div>
       <Nav />
-      {destinations}
+      <div className="mt-[100px]">
+          {destinations}
+      </div>
     </div>
   );
 }
