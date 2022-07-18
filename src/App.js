@@ -3,14 +3,14 @@ import data from "./data"
 import Card from "./components/Card";
 
 function App() {
-  let destinations = data.map((place)=> {
-    return <Card place={place}/>
+  let destinations = data.map((place, index)=> {
+    return <Card place={place} key={index}/>
   })
 
   return (
     <div>
       <Nav />
-      <div className="mt-[100px]">
+      <div className="my-[64px]">
           {destinations}
       </div>
     </div>
